@@ -1,0 +1,157 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffd6e0;
+  padding: 12px;
+}
+
+/* Common animated buttons */
+.animated-btn {
+  background: #fff7cc;   /* light yellow */
+  color: #7a5200;        /* darker golden text */
+
+  animation: blinkPulse 2.5s infinite ease-in-out !important;
+  transition: filter 0.3s ease, transform 0.2s ease;
+}
+
+
+
+
+/* Strong blink + pulse */
+@keyframes blinkPulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 0, 100, 0.0);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.08);
+    box-shadow: 0 0 15px rgba(255, 0, 100, 0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 0, 100, 0.0);
+  }
+}
+
+/* Hover = little darker */
+.animated-btn:hover {
+  filter: brightness(0.85);
+}
+
+/* Click pop */
+.animated-btn:active {
+  transform: scale(1.2);
+}
+
+.line {
+  font-size: 18px;
+  text-align: center;
+  margin: 8px 0;
+  font-weight: 500;
+}
+
+.decorated {
+  letter-spacing: 0.5px;
+}
+
+.highlight {
+  font-weight: 700;
+  color: #ff5c8a;   /* soft romantic pink */
+}
+
+#glowup
+
+.infinity-golden {
+  font-size: 10rem; /* big infinity */
+  font-weight: bold;
+  display: block;
+  text-align: center;
+
+  /* Gradient golden color */
+  background: linear-gradient(90deg, #ffd700, #ffb700, #ffec8b, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Glow around text */
+  text-shadow:
+    0 0 10px #ffd700,
+    0 0 20px #ffd700,
+    0 0 30px #ffd700,
+    0 0 50px #ffb700;
+
+  /* Optional subtle pulsing */
+  animation: glowPulseExtreme 3s infinite ease-in-out;
+}
+
+@keyframes glowPulseExtreme {
+  0%, 100% {
+    text-shadow:
+      0 0 5px #ffd700,
+      0 0 10px #ffd700,
+      0 0 20px #ffb700,
+      0 0 40px #ffec8b;
+  }
+  50% {
+    text-shadow:
+      0 0 20px #ffd700,
+      0 0 40px #ffd700,
+      0 0 60px #ffb700,
+      0 0 100px #ffec8b;
+  }
+}
+
+.next-img-i {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: none; /* remove the shadow */
+  border-radius: 0; /* optional: remove rounded corners */
+}
+
+.animated-btn-i {
+  background-color: #FFD700;       /* Golden background */
+  color: #fff;                      /* White text for contrast */
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 
+    transform 0.15s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+
+  /* Subtle golden glow */
+  box-shadow: 0 0 8px #FFD700AA, 0 0 15px #FFD70055;
+}
+
+.animated-btn-i {
+  background-color: #FFE79C;       /* Light golden background */
+  color: #333;                     /* Dark text for contrast */
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 
+    transform 0.15s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+
+  /* Subtle light golden glow */
+  box-shadow: 0 0 6px #FFE79CAA, 0 0 12px #FFE79C55;
+}
+
+.animated-btn-i {
+  transform: scale(1.05);             /* Slight pop on hover */
+  box-shadow: 0 0 10px #FFE79CFF, 0 0 20px #FFE79CAA;  /* Glow intensifies */
+  background-color: #FFF1B3;          /* Slightly brighter on hover */
+}
+
+
+

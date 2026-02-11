@@ -1,0 +1,47 @@
+.card {
+  background: #fff;
+  width: 100%;
+  max-width: 360px;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #ff4d6d;
+  color: #fff;
+  font-size: 18px;
+}
+
+.btn-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn-row button {
+  flex: 1;
+}
+
+/* Common animated buttons */
+.animated-btn {
+  transition: 
+    transform 0.15s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.animated-btn:hover {
+  filter: brightness(0.9);   /* little darker */
+  transform: scale(1.05);
+}
+
+.animated-btn:active {
+  transform: scale(1.25);   /* BLOW UP on click */
+  box-shadow: 0 0 20px rgba(255, 0, 100, 0.6);
+}
