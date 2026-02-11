@@ -13,7 +13,7 @@ import NextPage9 from "./components/NextPage9";
 import NextPage10 from "./components/NextPage10";
 import NextPage11 from "./components/NextPage11";
 import NextPage12 from "./components/NextPage12";
-import Success from "./components/Success";
+
 
 import music from "./assets/audio/music.mp3";
 import "./App.css";
